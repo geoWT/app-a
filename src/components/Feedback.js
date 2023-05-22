@@ -9,7 +9,7 @@ export const FeedbackForm =() => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (Number(score) <= 5 ) {
+        if (Number(score) <= 5 && comment.trim() === '' ) {
             setShowPopup(true)
             return;
         }
