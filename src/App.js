@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { FeedbackForm } from './components/Feedback';
 
 function App() {
   return (
@@ -18,6 +19,10 @@ function App() {
           Learn React
         </a>
       </header>
+
+      <div className="FeedbackForm">
+        <FeedbackForm/>
+      </div>
     </div>
   );
 }
